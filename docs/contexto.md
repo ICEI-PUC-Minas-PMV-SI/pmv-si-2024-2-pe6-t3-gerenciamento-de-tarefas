@@ -31,9 +31,20 @@ Além disso, a implementação de funcionalidades colaborativas visa melhorar a 
 
 ## Público-Alvo
 
-##Personas
+### 1.	Profissionais Individuais
+   • Descrição: Profissionais autônomos, freelancers, ou funcionários que trabalham de forma independente e precisam organizar suas tarefas diárias de maneira eficiente. Esses usuários buscam uma ferramenta que ajude a planejar, priorizar e acompanhar o progresso de suas atividades profissionais e pessoais.
 
-1. João Paulo
+### 2.	Equipes de Projeto
+   • Descrição: Grupos de profissionais que trabalham de forma colaborativa em projetos, seja em empresas, startups ou ambientes acadêmicos. Essas equipes precisam de uma solução que facilite a divisão de tarefas, monitoramento do progresso e comunicação interna.
+
+### 3.   Estudantes e Acadêmicos
+   • Descrição: Alunos de cursos universitários e pesquisadores que precisam gerenciar suas atividades acadêmicas, como estudos, projetos de pesquisa, trabalhos em grupo, e compromissos extracurriculares.
+
+
+
+## Personas
+
+### 1. João Paulo
    
 •	Idade: 29 anos
 
@@ -48,7 +59,7 @@ Além disso, a implementação de funcionalidades colaborativas visa melhorar a 
 •	Uso do Sistema: Utiliza o sistema para criar listas de tarefas diárias, categorizá-las por prioridade e integrar com seu calendário. Aproveita as notificações para manter o ritmo no trabalho.
 
 
-3. Marina Oliveira
+### 2. Marina Oliveira
    
 •	Idade: 40 anos
 
@@ -63,7 +74,7 @@ Além disso, a implementação de funcionalidades colaborativas visa melhorar a 
 •	Uso do Sistema: Utiliza o sistema para delegar tarefas e acompanhar o progresso de cada membro da equipe. Gosta de visualizar o status dos projetos em um painel e gerar relatórios semanais.
 
 
-5. Beatriz Mendes
+### 3. Beatriz Mendes
    
 •	Idade: 35 anos
 
@@ -78,7 +89,7 @@ Além disso, a implementação de funcionalidades colaborativas visa melhorar a 
 •	Uso do Sistema: Usa o sistema para criar e priorizar tarefas de acordo com cada cliente. Aproveita a funcionalidade de anexar documentos e notas para manter tudo organizado. Utiliza o sistema para planejar seu dia e acompanhar o tempo gasto em cada tarefa.
 
 
-4.Carlos Eduardo
+### 4. Carlos Eduardo
 
 •	Idade: 22 anos
 
