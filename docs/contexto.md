@@ -134,21 +134,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-003| O sistema deve ser intuitivo e fácil de usar, garantindo uma boa experiência aos usuários. | MÉDIA | 
 |RNF-004| A plataforma deve ser compatível com os principais navegadores (Chrome, Firefox, Safari) | MÉDIA | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
@@ -162,53 +147,61 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 # Catálogo de Serviços
 
 ### 1. Cadastro e Gerenciamento de Tarefas
-Descrição: Permite aos usuários criar, editar e excluir tarefas, organizando suas atividades diárias.
-Funcionalidades:
-Criação de tarefas com título, descrição e prazo.
-Edição e exclusão de tarefas existentes.
+- **Descrição:** Permite aos usuários criar, editar e excluir tarefas, organizando suas atividades diárias.
+
+- **Funcionalidades:**
+  - Criação de tarefas com título, descrição e prazo.
+  - Edição e exclusão de tarefas existentes.
 
 ### 2. Organização e Priorização
-Descrição: Facilita a organização das tarefas em categorias e a definição de prioridades.
-Funcionalidades:
-Classificação de tarefas por categorias ou projetos.
-Definição de níveis de prioridade (alta, média, baixa).
+- **Descrição:** Facilita a organização das tarefas em categorias e a definição de prioridades.
+
+- **Funcionalidades:**
+  - Classificação de tarefas por categorias ou projetos.
+  - Definição de níveis de prioridade (alta, média, baixa).
 
 ### 3. Visualização e Relatórios
-Descrição: Oferece modos de visualização das tarefas e geração de relatórios de desempenho.
-Funcionalidades:
-Visualização em lista, calendário ou kanban.
-Geração de relatórios semanais/mensais sobre tarefas concluídas e pendentes.
+- **Descrição:** Oferece modos de visualização das tarefas e geração de relatórios de desempenho.
+
+- **Funcionalidades:**
+  - Visualização em lista, calendário ou kanban.
+  - Geração de relatórios semanais/mensais sobre tarefas concluídas e pendentes.
 
 ### 4. Colaboração e Compartilhamento
-Descrição: Facilita a colaboração entre usuários, permitindo o compartilhamento e a atribuição de tarefas.
-Funcionalidades:
-Compartilhamento de tarefas com outros usuários.
-Atribuição de tarefas a membros da equipe.
-Adição de comentários e notas em tarefas.
+- **Descrição:** Facilita a colaboração entre usuários, permitindo o compartilhamento e a atribuição de tarefas.
+
+- **Funcionalidades:**
+  - Compartilhamento de tarefas com outros usuários.
+  - Atribuição de tarefas a membros da equipe.
+  - Adição de comentários e notas em tarefas.
 
 ### 5. Integração com Calendários
-Descrição: Sincroniza tarefas com calendários digitais e envia lembretes automáticos.
-Funcionalidades:
-Integração com Google Calendar, Outlook, etc.
-Notificações e lembretes automáticos de prazos.
+- **Descrição:** Sincroniza tarefas com calendários digitais e envia lembretes automáticos.
+
+- **Funcionalidades:**
+  - Integração com Google Calendar, Outlook, etc.
+  - Notificações e lembretes automáticos de prazos.
 
 ### 6. Anexos e Documentação
-Descrição: Permite anexar arquivos e adicionar notas detalhadas às tarefas.
-Funcionalidades:
-Upload de documentos e imagens em tarefas.
-Adição de notas e descrições detalhadas.
+- **Descrição:** Permite anexar arquivos e adicionar notas detalhadas às tarefas.
+
+- **Funcionalidades:**
+  - Upload de documentos e imagens em tarefas.
+  - Adição de notas e descrições detalhadas.
 
 ### 7. Customização e Preferências
-Descrição: Oferece opções de personalização da interface e configurações de notificações.
-Funcionalidades:
-Customização de temas e organização da interface.
-Configuração de notificações e alertas.
+- **Descrição:** Oferece opções de personalização da interface e configurações de notificações.
+
+- **Funcionalidades:**
+  - Customização de temas e organização da interface.
+  - Configuração de notificações e alertas.
 
 ### 8. Segurança e Acesso
-Descrição: Garante a segurança dos dados dos usuários e controla o acesso às tarefas.
-Funcionalidades:
-Autenticação de usuários e autenticação em dois fatores (2FA).
-Controle de permissões e acesso a tarefas específicas.
+- **Descrição:** Garante a segurança dos dados dos usuários e controla o acesso às tarefas.
+
+- **Funcionalidades:**
+  - Autenticação de usuários.
+  - Controle de permissões e acesso a tarefas específicas.
 
 # Arquitetura da Solução
 
@@ -218,14 +211,39 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 
 ## Tecnologias Utilizadas
+As tecnologias usadas para desenvolver o projeto de gerenciamento de tarefas serão as descrevidas abaixo.
+### 1. Front-End
+- React.js: Biblioteca JavaScript para construção da interface do usuário. Usada para criar componentes dinâmicos e responsivos.
+- Context API (React): Para gerenciamento de estado global na aplicação, garantindo que os dados fluam corretamente entre os componentes.
+- Axios: Biblioteca para fazer requisições HTTP do front-end para o back-end, utilizada para comunicação com a API.
+
+### 2. Back-End
+- Node.js: Plataforma para o desenvolvimento do servidor back-end. Escolhida por sua capacidade de lidar com grande número de conexões simultâneas e por permitir o uso de JavaScript em todo o stack.
+- Express.js: Framework minimalista para Node.js, utilizado para criar a API RESTful que servirá os dados e gerenciará a lógica de negócios.
+- Sequelize: ORM (Object-Relational Mapping) para MySQL, facilitando a interação com o banco de dados e gerenciando migrations e modelos de dados.
+
+### 3. Banco de Dados
+- MySQL: Banco de dados relacional para armazenar dados da aplicação, como informações de usuários, tarefas, categorias, etc. Escolhido pela sua robustez e ampla adoção no mercado.
+
+### 4. Integração e Comunicação
+- Google Calendar API: Utilizada para integrar o sistema com calendários digitais, permitindo que as tarefas sejam sincronizadas com o Google Calendar dos usuários.
+- Socket.io: Biblioteca para comunicação em tempo real entre cliente e servidor, usada para notificações instantâneas e atualizações de status ao vivo.
+
+### 5. Armazenamento e Infraestrutura
+- AWS (Amazon Web Services): Serviço de nuvem utilizado para hospedar a aplicação, com EC2 para servidores, RDS para o banco de dados MySQL, e S3 para armazenamento de arquivos estáticos.
+
+### 6. IDE de Desenvolvimento
+- Visual Studio Code: IDE principal para o desenvolvimento da aplicação, escolhida por sua flexibilidade e ampla gama de extensões que melhoram a produtividade.
 
 Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
 
 Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
 ## Hospedagem
-
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+Serviços Utilizados: A plataforma será hospedada na Amazon Web Services (AWS), aproveitando a robustez e a escalabilidade dos serviços oferecidos pela AWS. Os principais componentes da infraestrutura incluirão:
+- EC2 (Elastic Compute Cloud): Para hospedar o servidor back-end (Node.js com Express.js) e o front-end estático (React.js).
+- RDS (Relational Database Service): Para gerenciar o banco de dados MySQL, garantindo alta disponibilidade e backups automáticos.
+- S3 (Simple Storage Service): Para armazenar arquivos estáticos, como imagens e backups, com alta durabilidade e acessibilidade.
 
 > **Links Úteis**:
 >
