@@ -161,7 +161,54 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Catálogo de Serviços
 
-Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
+### 1. Cadastro e Gerenciamento de Tarefas
+Descrição: Permite aos usuários criar, editar e excluir tarefas, organizando suas atividades diárias.
+Funcionalidades:
+Criação de tarefas com título, descrição e prazo.
+Edição e exclusão de tarefas existentes.
+
+### 2. Organização e Priorização
+Descrição: Facilita a organização das tarefas em categorias e a definição de prioridades.
+Funcionalidades:
+Classificação de tarefas por categorias ou projetos.
+Definição de níveis de prioridade (alta, média, baixa).
+
+### 3. Visualização e Relatórios
+Descrição: Oferece modos de visualização das tarefas e geração de relatórios de desempenho.
+Funcionalidades:
+Visualização em lista, calendário ou kanban.
+Geração de relatórios semanais/mensais sobre tarefas concluídas e pendentes.
+
+### 4. Colaboração e Compartilhamento
+Descrição: Facilita a colaboração entre usuários, permitindo o compartilhamento e a atribuição de tarefas.
+Funcionalidades:
+Compartilhamento de tarefas com outros usuários.
+Atribuição de tarefas a membros da equipe.
+Adição de comentários e notas em tarefas.
+
+### 5. Integração com Calendários
+Descrição: Sincroniza tarefas com calendários digitais e envia lembretes automáticos.
+Funcionalidades:
+Integração com Google Calendar, Outlook, etc.
+Notificações e lembretes automáticos de prazos.
+
+### 6. Anexos e Documentação
+Descrição: Permite anexar arquivos e adicionar notas detalhadas às tarefas.
+Funcionalidades:
+Upload de documentos e imagens em tarefas.
+Adição de notas e descrições detalhadas.
+
+### 7. Customização e Preferências
+Descrição: Oferece opções de personalização da interface e configurações de notificações.
+Funcionalidades:
+Customização de temas e organização da interface.
+Configuração de notificações e alertas.
+
+### 8. Segurança e Acesso
+Descrição: Garante a segurança dos dados dos usuários e controla o acesso às tarefas.
+Funcionalidades:
+Autenticação de usuários e autenticação em dois fatores (2FA).
+Controle de permissões e acesso a tarefas específicas.
 
 # Arquitetura da Solução
 
