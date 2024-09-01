@@ -235,9 +235,7 @@ As tecnologias usadas para desenvolver o projeto de gerenciamento de tarefas ser
 ### 6. IDE de Desenvolvimento
 - Visual Studio Code: IDE principal para o desenvolvimento da aplicação, escolhida por sua flexibilidade e ampla gama de extensões que melhoram a produtividade.
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+![arq](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t3-gerenciamento-de-tarefas/blob/main/docs/img/mapa_de_tecnologias_do_projeto.png)
 
 ## Hospedagem
 Serviços Utilizados: A plataforma será hospedada na Amazon Web Services (AWS), aproveitando a robustez e a escalabilidade dos serviços oferecidos pela AWS. Os principais componentes da infraestrutura incluirão:
