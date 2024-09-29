@@ -1,10 +1,6 @@
 # APIs e Web Services
 
-O planejamento de uma aplicação de APIS Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, você pode evitar muitos problemas e garantir que a sua API seja segura, escalável e eficiente.
-
-Aqui estão algumas etapas importantes que devem ser consideradas no planejamento de uma aplicação de APIS Web.
-
-[Inclua uma breve descrição do projeto.]
+A API e Web Service do projeto "GerenciamentoApiRest" oferece funcionalidades de gerenciamento de tarefas e projetos, permitindo criar, atribuir, e acompanhar atividades de forma colaborativa. A arquitetura RESTful, com autenticação via JWT e banco de dados PostgreSQL, garante segurança e escalabilidade. É uma solução eficiente para organizar e monitorar projetos em equipe.
 
 ## Objetivos da API
 
