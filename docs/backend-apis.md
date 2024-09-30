@@ -66,7 +66,12 @@ Esta arquitetura modular e organizada facilita o desenvolvimento e a manutençã
 
 ## Requisitos Não Funcionais
 
-[Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
+|ID     | Descrição do Requisito  |Prioridade |
+|-------|-------------------------|----|
+|RNF-001| Deve possuir uma interface responsiva que funcione bem em dispositivos móveis e Web. | MÉDIA | 
+|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-003| O sistema deve ser intuitivo e fácil de usar, garantindo uma boa experiência aos usuários. | MÉDIA | 
+|RNF-004| A plataforma deve ser compatível com os principais navegadores (Chrome, Firefox, Safari) | MÉDIA | 
 
 ## Tecnologias Utilizadas
 - Back-end: ASP.NET Core 6.0
