@@ -48,28 +48,43 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 [Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
 
 ### Endpoint 1
-- Método: GET
-- URL: /endpoint1
+- Método: POST
+- URL: /api/Usuarios/register
 - Parâmetros:
-  - param1: [descrição]
+  - param1: {
+  "id": 0,
+  "nome": "Pessoa1",
+  "email": "user@example.com",
+  "senha": "SenhaSegura@123"
+}
 - Resposta:
-  - Sucesso (200 OK)
+  - Sucesso (201 CREATED)
+    ```
+   {
+    "$id": "1",
+    "nome": "Pessoa1",
+    "email": "user@example.com",
+    "senha": "$2a$11$WnPB5LqYL5TqOr57JNqNTeHO2fWdR4j6sJO7QzVU60LMu7tpMAtjG",
+    "perfil": 1,
+    "perfilDescricao": "Cliente",
+    "id": 4
+}
+    ```
+  - 400 Bad Request
     ```
     {
-      "message": "Success",
-      "data": {
-        ...
-      }
-    }
-    ```
-  - Erro (4XX, 5XX)
-    ```
-    {
-      "message": "Error",
-      "error": {
-        ...
-      }
-    }
+    "$id": "1",
+    "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "errors": {
+        "$id": "2",
+        "Senha": [
+            "A senha deve ter pelo menos 8 caracteres."
+        ]
+    },
+    "traceId": "00-fee99bfcd684fa34c704557dcd967cae-ff439ed4a936c69a-00"
+}
     ```
 
 
