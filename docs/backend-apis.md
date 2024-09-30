@@ -7,14 +7,10 @@ A API e Web Service do projeto "GerenciamentoApiRest" oferece funcionalidades de
 **API Gerenciamento de Tarefas:**
 Objetivo: Prover funcionalidades para gerenciamento de projetos e tarefas, voltado ao público que necessita ter um controle melhor sobre projetos ou atividades cotidianas.
 
-**Recursos**:
-
-- API de projeto: Inclusão, alteração, exclusão e pesquisa por projeto.
-- API de usuário: Inclusão, alteração, exclusão e autenticação de usuários.
-- API de tarefa: Inclusão, alteração, exclusão e pesquisa de tarefas, com informações como título, descrição, data, dentre outras.
-- API de integração: Integração com o google agenda, de forma que ao se criar uma tarefa o usuario receba a notificação durante o prazo da mesma.
-- Relatório de tarefas: Lista de Tarefas por projeto.
-
+- Facilitar a criação e gestão de projetos e tarefas.
+- Fornecer um meio para acompanhar o progresso das tarefas atribuídas a diferentes usuários.
+- Permitir a integração com outros serviços, como Google Agenda, para acompanhar os prazos e status das atividades.
+- Implementar autenticação e autorização para garantir que somente usuários autorizados possam acessar e modificar os dados.
 
 
 ## Arquitetura
@@ -65,10 +61,12 @@ Esta arquitetura modular e organizada facilita o desenvolvimento e a manutençã
 [Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
 
 ## Tecnologias Utilizadas
-
-Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.
-
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+- Back-end: ASP.NET Core 6.0
+- Banco de Dados: PostgreSQL
+- ORM: Entity Framework Core
+- Autenticação: JWT (JSON Web Token)
+- Documentação: Swagger
+- Controle de Versão: Git
 
 ## API Endpoints
 
