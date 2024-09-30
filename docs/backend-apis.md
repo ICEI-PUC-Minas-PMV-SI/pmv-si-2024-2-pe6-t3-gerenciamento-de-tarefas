@@ -4,16 +4,16 @@ A API e Web Service do projeto "GerenciamentoApiRest" oferece funcionalidades de
 
 ## Objetivos da API
 
-API Gerenciamento de Tarefas:
+**API Gerenciamento de Tarefas:**
 Objetivo: Prover funcionalidades para gerenciamento de projetos e tarefas, voltado ao público que necessita ter um controle melhor sobre projetos ou atividades cotidianas.
 
-Recursos:
+**Recursos**:
 
-API de projeto: Inclusão, alteração, exclusão e pesquisa por projeto.
-API de usuário: Inclusão, alteração, exclusão e autenticação de usuários.
-API de tarefa: Inclusão, alteração, exclusão e pesquisa de tarefas, com informações como título, descrição, data, dentre outras.
-API de integração: Integração com o google agenda, de forma que ao se criar uma tarefa o usuario receba a notificação durante o prazo da mesma.
-Relatório de tarefas: Lista de Tarefas por projeto.
+- API de projeto: Inclusão, alteração, exclusão e pesquisa por projeto.
+- API de usuário: Inclusão, alteração, exclusão e autenticação de usuários.
+- API de tarefa: Inclusão, alteração, exclusão e pesquisa de tarefas, com informações como título, descrição, data, dentre outras.
+- API de integração: Integração com o google agenda, de forma que ao se criar uma tarefa o usuario receba a notificação durante o prazo da mesma.
+- Relatório de tarefas: Lista de Tarefas por projeto.
 
 
 
