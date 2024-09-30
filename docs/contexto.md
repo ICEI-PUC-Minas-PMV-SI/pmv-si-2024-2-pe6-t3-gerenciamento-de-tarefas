@@ -222,10 +222,6 @@ As tecnologias usadas para desenvolver o projeto de gerenciamento de tarefas ser
 ### 3. Banco de Dados
 - PostgreSQL: Sistema de gerenciamento de banco de dados relacional utilizado para armazenar os dados da aplicação. Oferece suporte avançado para operações complexas e é ideal para aplicativos que exigem segurança e consistência de dados.
 
-
-### 3. Banco de Dados
-- PostgreSQL: Banco de dados relacional utilizado para armazenar dados da aplicação, como informações de usuários e tarefas.
-
 ### 4. Armazenamento e Infraestrutura
 - AWS (Amazon Web Services): Serviço de nuvem utilizado para hospedar a aplicação, com EC2 para servidores, RDS para o banco de dados MySQL, e S3 para armazenamento de arquivos estáticos.
 
