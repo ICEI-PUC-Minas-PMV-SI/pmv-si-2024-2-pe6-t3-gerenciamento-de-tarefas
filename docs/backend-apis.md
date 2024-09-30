@@ -50,16 +50,19 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 ### Endpoint 1
 - Método: POST
 - URL: /api/Usuarios/register
-- Parâmetros:
-  - param1: {
+- Parâmetros: Sem Parametros
+
+- Corpo da Requisição:
+   ```json
+    {
   "id": 0,
   "nome": "Pessoa1",
   "email": "user@example.com",
-  "senha": "SenhaSegura@123"
-}
+  "senha": "SenhaSegura@123"}
+   
 - Resposta:
   - Sucesso (201 CREATED)
-    ```
+   ```json
    {
     "$id": "1",
     "nome": "Pessoa1",
@@ -68,10 +71,9 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
     "perfil": 1,
     "perfilDescricao": "Cliente",
     "id": 4
-}
-    ```
+   }
+  
   - 400 Bad Request
-    ```
     {
     "$id": "1",
     "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
@@ -83,9 +85,8 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
             "A senha deve ter pelo menos 8 caracteres."
         ]
     },
-    "traceId": "00-fee99bfcd684fa34c704557dcd967cae-ff439ed4a936c69a-00"
-}
-    ```
+    "traceId": "00-fee99bfcd684fa34c704557dcd967cae-ff439ed4a936c69a-00"}
+   
 
 
 ## Considerações de Segurança
