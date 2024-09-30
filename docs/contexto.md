@@ -213,7 +213,6 @@ As tecnologias usadas para desenvolver o projeto de gerenciamento de tarefas ser
 ### 1. Front-End
 - React.js: Biblioteca JavaScript para construção da interface do usuário. Usada para criar componentes dinâmicos e responsivos.
 - Context API (React): Para gerenciamento de estado global na aplicação, garantindo que os dados fluam corretamente entre os componentes.
-- Axios: Biblioteca para fazer requisições HTTP do front-end para o back-end, utilizada para comunicação com a API.
 
 ### 2. Back-End
 - JavaScript, HTML, CSS: Linguagens fundamentais para desenvolvimento da interface do usuário.
