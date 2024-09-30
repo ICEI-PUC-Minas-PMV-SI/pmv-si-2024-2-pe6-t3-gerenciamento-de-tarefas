@@ -216,22 +216,17 @@ As tecnologias usadas para desenvolver o projeto de gerenciamento de tarefas ser
 - Axios: Biblioteca para fazer requisições HTTP do front-end para o back-end, utilizada para comunicação com a API.
 
 ### 2. Back-End
-- Node.js: Plataforma para o desenvolvimento do servidor back-end. Escolhida por sua capacidade de lidar com grande número de conexões simultâneas e por permitir o uso de JavaScript em todo o stack.
-- Express.js: Framework minimalista para Node.js, utilizado para criar a API RESTful que servirá os dados e gerenciará a lógica de negócios.
-- Sequelize: ORM (Object-Relational Mapping) para MySQL, facilitando a interação com o banco de dados e gerenciando migrations e modelos de dados.
+- JavaScript, HTML, CSS: Linguagens fundamentais para desenvolvimento da interface do usuário.
+- React.js: Biblioteca JavaScript para criação de componentes dinâmicos e responsivos.
 
 ### 3. Banco de Dados
-- MySQL: Banco de dados relacional para armazenar dados da aplicação, como informações de usuários, tarefas, categorias, etc. Escolhido pela sua robustez e ampla adoção no mercado.
+- PostgreSQL: Banco de dados relacional utilizado para armazenar dados da aplicação, como informações de usuários e tarefas.
 
-### 4. Integração e Comunicação
-- Google Calendar API: Utilizada para integrar o sistema com calendários digitais, permitindo que as tarefas sejam sincronizadas com o Google Calendar dos usuários.
-- Socket.io: Biblioteca para comunicação em tempo real entre cliente e servidor, usada para notificações instantâneas e atualizações de status ao vivo.
-
-### 5. Armazenamento e Infraestrutura
+### 4. Armazenamento e Infraestrutura
 - AWS (Amazon Web Services): Serviço de nuvem utilizado para hospedar a aplicação, com EC2 para servidores, RDS para o banco de dados MySQL, e S3 para armazenamento de arquivos estáticos.
 
-### 6. IDE de Desenvolvimento
-- Visual Studio Code: IDE principal para o desenvolvimento da aplicação, escolhida por sua flexibilidade e ampla gama de extensões que melhoram a produtividade.
+### 7. IDE de Desenvolvimento
+- Visual Studio: IDE principal utilizada no desenvolvimento da aplicação, escolhida pela integração com C# e pela produtividade oferecida.
 
 ![arq](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t3-gerenciamento-de-tarefas/blob/main/docs/img/mapa_das_tecnologias.png)
 
