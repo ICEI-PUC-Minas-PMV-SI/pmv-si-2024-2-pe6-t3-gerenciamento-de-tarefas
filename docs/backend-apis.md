@@ -54,7 +54,15 @@ Esta arquitetura modular e organizada facilita o desenvolvimento e a manutençã
 
 ## Requisitos Funcionais
 
-[Liste os principais requisitos funcionais da aplicação.]
+|ID    | Descrição do Requisito  | Prioridade |
+|------|-----------------------------------------|----|
+|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
+|RF-002| Emitir um relatório de tarefas realizadas no mês   | MÉDIA |
+|RF-003| Permitir que o usuário categorize e priorize tarefas   | MÉDIA |
+|RF-004| Permitir a integração com calendários digitais (Google Calendar, Outlook, etc.)  | ALTA |
+|RF-005| Permitir que o usuário compartilhe tarefas com outros usuários   | MÉDIA |
+|RF-006| Permitir que o usuário receba notificações de prazos e lembretes de tarefas  | MÉDIA |
+|RF-007| Permitir que o usuário anexe arquivos ou notas às tarefas | MÉDIA |
 
 ## Requisitos Não Funcionais
 
