@@ -145,4 +145,7 @@ Para os testes utilizaremos o Postman. Será realizado o registro de um usuário
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+- Biblioteca do .NET: Documentação oficial que fornece informações sobre as funcionalidades e classes disponíveis na plataforma .NET. 
+- https://learn.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetcore-8.0&tabs=visual-studio
+- https://learn.microsoft.com/en-us/ef/core/
+- https://learning.postman.com/docs/introduction/overview/
