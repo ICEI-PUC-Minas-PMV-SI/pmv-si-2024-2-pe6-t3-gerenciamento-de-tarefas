@@ -70,7 +70,6 @@ Esta arquitetura modular e organizada facilita o desenvolvimento e a manutençã
 
 ## API Endpoints
 
-[Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
 
 ### Endpoint 1
 - Método: POST
@@ -97,7 +96,17 @@ Esta arquitetura modular e organizada facilita o desenvolvimento e a manutençã
     "perfilDescricao": "Cliente",
     "id": 4
    }
-  
+
+  - Corpo da Requisição:
+   ```json
+    {
+  "id": 0,
+  "nome": "Pessoa1",
+  "email": "user@example.com",
+  "senha": "Senh"}
+
+   - Resposta:
+   
   - 400 Bad Request
     {
     "$id": "1",
@@ -111,8 +120,51 @@ Esta arquitetura modular e organizada facilita o desenvolvimento e a manutençã
         ]
     },
     "traceId": "00-fee99bfcd684fa34c704557dcd967cae-ff439ed4a936c69a-00"}
-   
 
+
+   ### Endpoint 2
+- Método: GET
+- URL: /api/Tarefas
+- Parâmetros: Sem Parametros
+
+   - Resposta:
+  ```json
+  {
+    "$id": "1",
+    "items": {
+        "$id": "2",
+        "$values": [
+            {
+                "$id": "3",
+                "tarefaId": 0,
+                "titulo": "string",
+                "descricao": "string",
+                "prioridade": 0,
+                "status": 0,
+                "usuarioAtribuido": 0,
+                "dataVencimento": "2024-09-28T21:27:00.983Z",
+                "criadoEm": "2024-09-28T21:27:00.983Z",
+                "atualizadoEm": "2024-09-28T21:27:00.983Z",
+                "id": 1
+            },
+            {
+                "$id": "4",
+                "tarefaId": 0,
+                "titulo": "string",
+                "descricao": "string",
+                "prioridade": 0,
+                "status": 0,
+                "usuarioAtribuido": 0,
+                "dataVencimento": "2024-09-28T21:11:21.933Z",
+                "criadoEm": "2024-09-28T21:11:21.933Z",
+                "atualizadoEm": "2024-09-28T21:11:21.933Z",
+                "id": 2
+            }
+        ]
+    },
+    "currentPage": 1,
+    "pageSize": 10,
+    "totalCount": 2}
 
 ## Considerações de Segurança
 
