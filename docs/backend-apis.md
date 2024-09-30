@@ -45,12 +45,89 @@ A API retorna uma resposta de sucesso com os detalhes da tarefa criada.
 Esta arquitetura modular e organizada facilita o desenvolvimento e a manutenção da aplicação, garantindo que a API seja segura, eficiente e escalável, atendendo aos requisitos de gerenciamento de projetos e tarefas de forma robusta.
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
+### 1. Estrutura de Dados e Relacionamentos
+#### Usuário:
+Entidade que armazena os dados dos usuários, com atributos como:
+Id: Identificador único.
+Nome: Nome completo do usuário.
+Email: Utilizado para autenticação e contato.
+Senha: Armazenada de forma segura utilizando BCrypt.
+Perfil: Pode ser Administrador ou Cliente, definindo o nível de acesso.
+Projeto:
 
+Representa um projeto que contém várias tarefas. Cada projeto tem atributos como:
+Id: Identificador único.
+Título: Nome do projeto.
+Descrição: Descrição do escopo do projeto.
+Data de Criação: Data em que o projeto foi criado.
+Usuários Relacionados: Associação dos usuários participantes do projeto, permitindo a colaboração.
+
+#### Tarefa:
+
+Entidade que representa uma atividade específica vinculada a um projeto. A tarefa possui:
+Id: Identificador único da tarefa.
+Título: Nome da tarefa.
+Descrição: Informações detalhadas sobre a atividade.
+Prioridade: Definida como baixa, média ou alta.
+Status: Indica o estado da tarefa (não iniciada, em andamento, finalizada).
+Usuário Atribuído: Identificador do usuário responsável por realizar a tarefa.
+Data de Vencimento: Prazo para a conclusão da tarefa.
+Datas de Criação e Atualização: Controle temporal da criação e modificações da tarefa.
+
+
+### 2. Relacionamento entre Entidades
+Usuário - Projeto:
+
+Relacionamento muitos-para-muitos, em que um usuário pode participar de vários projetos, e um projeto pode ter vários usuários envolvidos.
+Projeto - Tarefa:
+
+Relacionamento um-para-muitos, em que um projeto pode conter várias tarefas, mas cada tarefa está vinculada a um único projeto.
+Usuário - Tarefa:
+Relacionamento um-para-muitos, em que um usuário pode ser responsável por várias tarefas, mas cada tarefa é atribuída a um único usuário.
+
+
+3. Representação Visual (Diagramas de Classes/Entidades)
+Diagrama de Entidade-Relacionamento (ER):
+O Diagrama ER ilustra como as entidades (Usuário, Projeto, Tarefa) se relacionam entre si, mostrando as chaves primárias (Id) e chaves estrangeiras que ligam essas entidades.
+Cada entidade é representada com seus atributos principais, e as linhas conectando as entidades indicam os relacionamentos (um-para-muitos ou muitos-para-muitos).
+
+
+4. DTOs (Data Transfer Objects)
+São utilizados para garantir que apenas os dados necessários sejam transferidos entre o cliente e a API.
+Por exemplo, ao retornar informações de um usuário, o DTO pode omitir a senha, enviando apenas nome, email e perfil, garantindo maior segurança.
+
+
+5. Entity Framework Core
+ORM (Object-Relational Mapping) que é utilizado para a comunicação com o banco de dados PostgreSQL, facilitando a persistência e manipulação dos dados.
+As classes representando Usuário, Projeto e Tarefa são mapeadas para tabelas no banco de dados, e o Entity Framework Core cuida de criar, ler, atualizar e excluir esses registros.
+
+
+6. Segurança dos Dados
+Autenticação: Utiliza JWT (JSON Web Token) para autenticar os usuários, garantindo que apenas aqueles autorizados possam acessar a API.
+Armazenamento de Senhas: As senhas são armazenadas utilizando hash BCrypt, o que evita que dados sensíveis sejam expostos em caso de vazamento.
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+### Usuário faz uma requisição: 
+O usuário interage com o sistema, enviando uma requisição (ex.: acessa uma URL para criar uma nova tarefa).
+
+### Controller (Controlador):
+O controlador recebe a requisição do usuário e a interpreta.
+Valida os dados e verifica se a operação solicitada é permitida.
+Envia a solicitação para o Model para realizar as operações necessárias.
+
+### Model (Modelo):
+O model realiza as operações com os dados, como acessar o banco de dados, fazer validações, ou aplicar regras de negócio.
+Se necessário, o model acessa o Banco de Dados para recuperar, armazenar, ou atualizar informações.
+
+### Banco de Dados:
+O banco de dados responde às operações solicitadas pelo model (ex.: salvar uma nova tarefa, retornar uma lista de tarefas).
+
+### Model retorna ao Controller:
+O model retorna os dados processados para o controlador, após completar a solicitação.
+
+### Controller retorna ao Usuário:
+O controlador então retorna uma resposta adequada ao usuário, podendo ser um sucesso, erro ou os dados requisitados (ex.: confirmação da criação da tarefa).
 
 ## Requisitos Funcionais
 
