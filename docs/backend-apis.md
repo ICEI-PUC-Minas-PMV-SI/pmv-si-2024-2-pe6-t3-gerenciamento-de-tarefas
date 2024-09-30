@@ -136,13 +136,12 @@ A autorização é tratada por meio de políticas e claims definidas nos tokens 
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+Para os testes utilizaremos o Postman. Será realizado o registro de um usuário, após o registro esse usuário fará o login e depois irá criar uma tarefa.
+![Captura de Tela (47)](https://github.com/user-attachments/assets/5715d125-ac74-4647-8091-1e41aba327ed)
+![Captura de Tela (48)](https://github.com/user-attachments/assets/dc6158f4-d50e-4a01-b5b0-45717e3c7d5c)
+![Captura de Tela (49)](https://github.com/user-attachments/assets/5ed4a455-83dd-47fa-be76-a1d8335a5784)
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+
 
 # Referências
 
