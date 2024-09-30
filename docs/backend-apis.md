@@ -19,7 +19,31 @@ Objetivo: Prover funcionalidades para gerenciamento de projetos e tarefas, volta
 
 ## Arquitetura
 
-[Descrição da arquitetura das APIs, incluindo os componentes e suas interações.]
+A arquitetura das APIs do projeto "GerenciamentoApiRest" é baseada em uma estrutura RESTful, proporcionando uma comunicação eficiente e organizada entre o cliente e o servidor para gerenciamento de tarefas e projetos. A seguir estão os principais componentes e suas interações:
+
+API RESTful
+Desenvolvida com ASP.NET Core, seguindo os princípios de APIs RESTful para permitir a criação, leitura, atualização e exclusão de dados de forma organizada.
+Modelo de Dados
+Usuário: Contém informações dos usuários, como nome, e-mail, senha e perfil (Administrador ou Cliente).
+Projeto: Representa projetos que contêm várias tarefas, com informações como título, descrição e data de criação.
+Tarefa: Contém os detalhes das atividades atribuídas aos projetos, incluindo título, descrição, prioridade, status (não iniciada, em andamento, finalizada), usuário atribuído e prazo de conclusão.
+DTOs (Data Transfer Objects)
+Utilizados para transferir dados entre a API e o cliente, garantindo que apenas as informações necessárias sejam transmitidas, melhorando a eficiência e a segurança da aplicação.
+Dados
+Utiliza o Entity Framework Core para gerenciar as interações com o banco de dados PostgreSQL, permitindo a persistência de dados de forma segura e estruturada.
+Autenticação e Segurança
+Implementa autenticação e autorização por meio de JWT (JSON Web Token) para proteger os endpoints da API.
+As senhas dos usuários são armazenadas de forma segura utilizando BCrypt para hash, garantindo a integridade e proteção dos dados sensíveis.
+Interações
+Requisições do Cliente: O cliente faz requisições HTTP (GET, POST, PUT, DELETE) para a API, interagindo com os recursos de usuários, projetos e tarefas.
+Controle de Dados: Os controladores (Controllers) da API processam as requisições, validam os dados recebidos e utilizam os serviços e repositórios para manipular os dados no banco de dados.
+Fluxo de Dados:
+Exemplo de Criação de Tarefa:
+O cliente envia uma requisição POST com os dados da nova tarefa.
+O controlador de Tarefas (TarefasController) valida a requisição e encaminha a tarefa ao serviço (TarefaService) para ser processada.
+A tarefa é persistida no banco de dados via Entity Framework Core.
+A API retorna uma resposta de sucesso com os detalhes da tarefa criada.
+Esta arquitetura modular e organizada facilita o desenvolvimento e a manutenção da aplicação, garantindo que a API seja segura, eficiente e escalável, atendendo aos requisitos de gerenciamento de projetos e tarefas de forma robusta.
 
 ## Modelagem da Aplicação
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
