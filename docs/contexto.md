@@ -215,8 +215,13 @@ As tecnologias usadas para desenvolver o projeto de gerenciamento de tarefas ser
 - Context API (React): Para gerenciamento de estado global na aplicação, garantindo que os dados fluam corretamente entre os componentes.
 
 ### 2. Back-End
-- JavaScript, HTML, CSS: Linguagens fundamentais para desenvolvimento da interface do usuário.
-- React.js: Biblioteca JavaScript para criação de componentes dinâmicos e responsivos.
+- ASP.NET Core 6.0: Framework robusto para o desenvolvimento do servidor back-end, escolhido por sua performance, segurança e suporte ao desenvolvimento de APIs RESTful escaláveis.
+- Entity Framework Core: ORM (Object-Relational Mapping) que facilita a interação com o banco de dados PostgreSQL, gerenciando as operações de criação, leitura, atualização e exclusão (CRUD) de forma eficiente, além de auxiliar na criação e gerenciamento de migrations.
+- AutoMapper: Biblioteca usada para mapear objetos de Data Transfer Objects (DTOs) para modelos de domínio e vice-versa, simplificando a conversão de dados entre diferentes camadas da aplicação.
+
+### 3. Banco de Dados
+- PostgreSQL: Sistema de gerenciamento de banco de dados relacional utilizado para armazenar os dados da aplicação. Oferece suporte avançado para operações complexas e é ideal para aplicativos que exigem segurança e consistência de dados.
+
 
 ### 3. Banco de Dados
 - PostgreSQL: Banco de dados relacional utilizado para armazenar dados da aplicação, como informações de usuários e tarefas.
