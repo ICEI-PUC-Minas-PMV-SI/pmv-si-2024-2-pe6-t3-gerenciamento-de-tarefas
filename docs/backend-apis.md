@@ -74,59 +74,56 @@ Usuário Atribuído: Identificador do usuário responsável por realizar a taref
 Data de Vencimento: Prazo para a conclusão da tarefa.
 Datas de Criação e Atualização: Controle temporal da criação e modificações da tarefa.
 
-
 ### 2. Relacionamento entre Entidades
-Usuário - Projeto:
-
+#### Usuário - Projeto:
 Relacionamento muitos-para-muitos, em que um usuário pode participar de vários projetos, e um projeto pode ter vários usuários envolvidos.
-Projeto - Tarefa:
 
+#### Projeto - Tarefa:
 Relacionamento um-para-muitos, em que um projeto pode conter várias tarefas, mas cada tarefa está vinculada a um único projeto.
-Usuário - Tarefa:
+
+#### Usuário - Tarefa:
 Relacionamento um-para-muitos, em que um usuário pode ser responsável por várias tarefas, mas cada tarefa é atribuída a um único usuário.
 
-
-3. Representação Visual (Diagramas de Classes/Entidades)
+### 3. Representação Visual (Diagramas de Classes/Entidades)
 Diagrama de Entidade-Relacionamento (ER):
 O Diagrama ER ilustra como as entidades (Usuário, Projeto, Tarefa) se relacionam entre si, mostrando as chaves primárias (Id) e chaves estrangeiras que ligam essas entidades.
 Cada entidade é representada com seus atributos principais, e as linhas conectando as entidades indicam os relacionamentos (um-para-muitos ou muitos-para-muitos).
 
-
-4. DTOs (Data Transfer Objects)
+### 4. DTOs (Data Transfer Objects)
 São utilizados para garantir que apenas os dados necessários sejam transferidos entre o cliente e a API.
 Por exemplo, ao retornar informações de um usuário, o DTO pode omitir a senha, enviando apenas nome, email e perfil, garantindo maior segurança.
 
-
-5. Entity Framework Core
+### 5. Entity Framework Core
 ORM (Object-Relational Mapping) que é utilizado para a comunicação com o banco de dados PostgreSQL, facilitando a persistência e manipulação dos dados.
 As classes representando Usuário, Projeto e Tarefa são mapeadas para tabelas no banco de dados, e o Entity Framework Core cuida de criar, ler, atualizar e excluir esses registros.
 
-
-6. Segurança dos Dados
+### 6. Segurança dos Dados
 Autenticação: Utiliza JWT (JSON Web Token) para autenticar os usuários, garantindo que apenas aqueles autorizados possam acessar a API.
 Armazenamento de Senhas: As senhas são armazenadas utilizando hash BCrypt, o que evita que dados sensíveis sejam expostos em caso de vazamento.
 
 ## Fluxo de Dados
 
-### Usuário faz uma requisição: 
+![arq](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t3-gerenciamento-de-tarefas/blob/main/docs/img/fluxo_de_dados_fluxograma.jpg)
+
+### 1. Usuário faz uma requisição: 
 O usuário interage com o sistema, enviando uma requisição (ex.: acessa uma URL para criar uma nova tarefa).
 
-### Controller (Controlador):
+### 2. Controller (Controlador):
 O controlador recebe a requisição do usuário e a interpreta.
 Valida os dados e verifica se a operação solicitada é permitida.
 Envia a solicitação para o Model para realizar as operações necessárias.
 
-### Model (Modelo):
+### 3. Model (Modelo):
 O model realiza as operações com os dados, como acessar o banco de dados, fazer validações, ou aplicar regras de negócio.
 Se necessário, o model acessa o Banco de Dados para recuperar, armazenar, ou atualizar informações.
 
-### Banco de Dados:
+### 4. Banco de Dados:
 O banco de dados responde às operações solicitadas pelo model (ex.: salvar uma nova tarefa, retornar uma lista de tarefas).
 
-### Model retorna ao Controller:
+### 5. Model retorna ao Controller:
 O model retorna os dados processados para o controlador, após completar a solicitação.
 
-### Controller retorna ao Usuário:
+### 5. Controller retorna ao Usuário:
 O controlador então retorna uma resposta adequada ao usuário, podendo ser um sucesso, erro ou os dados requisitados (ex.: confirmação da criação da tarefa).
 
 ## Requisitos Funcionais
