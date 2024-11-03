@@ -29,11 +29,12 @@ O sistema de gerenciamento de tarefas é projetado para oferecer uma experiênci
 [Discuta como a interface será adaptada para diferentes tamanhos de tela e dispositivos.]
 
 ### Interações do Usuário
-[Descreva as interações do usuário na interface, como animações, transições entre páginas e outras interações.]
+
+As interações serão projetadas para maximizar a eficiência. O usuário poderá adicionar e atualizar informações sem sair da página atual, utilizando pop-ups e modais para evitar recarregamentos de página. Animações suaves indicarão mudanças, como a atualização do status de uma tarefa, e as ações serão confirmadas visualmente (ex.: feedback de sucesso ou erro).
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+O fluxo de dados seguirá uma arquitetura onde a aplicação React se comunica diretamente com a API do back-end para buscar e enviar dados. Ao acessar um projeto ou tarefa, os detalhes correspondentes serão recuperados via API, permitindo ao usuário visualizar, atualizar e gerenciar tarefas em tempo real. Essa abordagem garantirá que as interações dos usuários sejam refletidas instantaneamente na interface, promovendo uma experiência dinâmica e responsiva.
 
 ## Requisitos Funcionais
 
