@@ -1,9 +1,13 @@
 # Front-end Web
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+O sistema de gerenciamento de tarefas é projetado para oferecer uma experiência eficiente e organizada no acompanhamento de projetos e tarefas. Isso permitirá que os usuários visualizem seus projetos, adicionem e editem tarefas, configurem notificações para lembretes e recebam relatórios personalizados. O objetivo é criar uma plataforma responsiva com navegação intuitiva, que simplifique o gerenciamento de tarefas e promova a produtividade.
 
 ## Tecnologias Utilizadas
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+
+◘ ReactJS: Para a criação de uma interface de usuário dinâmica e interativa.
+
+◘ Context API (React): Para gerenciamento de estado global na aplicação, garantindo que os dados fluam corretamente entre os componentes.
+
 
 ## Arquitetura
 
