@@ -26,7 +26,7 @@ O sistema de gerenciamento de tarefas é projetado para oferecer uma experiênci
 [Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
 
 ### Layout Responsivo
-[Discuta como a interface será adaptada para diferentes tamanhos de tela e dispositivos.]
+A interface da aplicação de gerenciamento de tarefas será projetada com um layout totalmente responsivo, garantindo que a experiência do usuário seja consistente e intuitiva em diferentes dispositivos, incluindo desktops, tablets e smartphones.
 
 ### Interações do Usuário
 
