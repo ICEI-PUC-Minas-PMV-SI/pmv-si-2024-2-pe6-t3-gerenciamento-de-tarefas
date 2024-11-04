@@ -39,11 +39,16 @@ O fluxo de dados seguirá uma arquitetura onde a aplicação React se comunica d
 
 ## Requisitos Funcionais
 
-[Liste os principais requisitos funcionais da aplicação.]
+ID	Descrição do Requisito	Prioridade
+RF-001	O sistema deve permitir que o usuário crie, edite e exclua tarefas, associando cada tarefa a um projeto específico.	
+RF-002	O sistema deve possibilitar ao usuário configurar notificações para tarefas e projetos, alertando sobre prazos e atualizações por meio de pop-ups ou uma área de notificações.
+RF-003	O sistema deve gerar relatórios personalizados sobre o andamento dos projetos e tarefas, exibindo informações como número de tarefas concluídas, status dos projetos e tempo gasto em cada tarefa.
+
 
 ## Requisitos Não Funcionais
 
-[Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
+RF-001	O sistema deve garantir que as páginas e componentes carreguem em menos de 2 segundos, mesmo em redes de baixa velocidade.
+RF-002	A aplicação deve ser escalável para suportar um número crescente de usuários e dados sem comprometer a performance.
 
 
 ## Considerações de Segurança
