@@ -17,7 +17,8 @@ O sistema de gerenciamento de tarefas é projetado para oferecer uma experiênci
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
 ## Projeto da Interface Web
-[Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+
+A interface web da aplicação de gerenciamento de tarefas será projetada para oferecer uma experiência de usuário limpa, intuitiva e focada na produtividade. O design visual seguirá uma abordagem minimalista e funcional, com cores suaves e ícones claros para guiar o usuário e evitar distrações. A interface buscará uma organização lógica das funcionalidades para que os usuários possam navegar facilmente entre os projetos, tarefas e relatórios.
 
 ### Wireframes
 [Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
