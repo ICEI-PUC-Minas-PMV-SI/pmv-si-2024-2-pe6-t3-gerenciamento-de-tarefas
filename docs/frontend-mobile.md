@@ -50,7 +50,10 @@ As seguintes tecnologias foram utilizadas no desenvolvimento deste projeto:
 
 ## Requisitos Não Funcionais
 
-[Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
+| ID     | Descrição do Requisito                                                                                                                |
+|--------|---------------------------------------------------------------------------------------------------------------------------------------|
+| RNF-001 | O aplicativo deve carregar as telas e executar operações como criação e edição de tarefas em até 2 segundos, garantindo uma experiência fluida para o usuário.          |
+| RNF-002 | O app deve ser compatível com os sistemas operacionais Android (versão 8.0 ou superior) e iOS (versão 13 ou superior), mantendo a responsividade e funcionalidade em diferentes tamanhos de tela.                 |
 
 
 ## Considerações de Segurança
