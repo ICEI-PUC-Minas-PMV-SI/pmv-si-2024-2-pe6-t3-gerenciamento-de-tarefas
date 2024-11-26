@@ -25,7 +25,8 @@ A modelagem da aplicação apresentada no diagrama representa um sistema de gere
 
 Estrutura de Dados:
 
-![image](https://github.com/user-attachments/assets/773d0312-76fb-49df-915f-3bb9da3a378d)
+![image](https://github.com/user-attachments/assets/fc247797-fb5e-4ee3-946f-af76f1f43d79)
+
 
 
 ## Projeto da Interface
