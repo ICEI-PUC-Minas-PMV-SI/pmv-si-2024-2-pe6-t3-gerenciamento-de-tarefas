@@ -20,7 +20,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento deste projeto:
 
 ## Modelagem da Aplicação
 
-A modelagem da aplicação apresentada no diagrama representa um sistema de gerenciamento de tarefas, conforme os seguintes detalhes:
+A modelagem da aplicação apresentada no diagrama representa um sistema de gerenciamento de tarefas:
 
 
 Estrutura de Dados:
