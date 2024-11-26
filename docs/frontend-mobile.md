@@ -23,9 +23,54 @@ As seguintes tecnologias foram utilizadas no desenvolvimento deste projeto:
 A modelagem da aplicação apresentada no diagrama representa um sistema de gerenciamento de tarefas:
 
 
-Estrutura de Dados:
+## Estrutura de Dados:
 
 ![image](https://github.com/user-attachments/assets/fc247797-fb5e-4ee3-946f-af76f1f43d79)
+
+
+## Tabela projeto
+
+### •	Contém informações relacionadas ao projeto.
+
+◘ Id
+
+◘ Nome
+
+◘ Descricao
+
+◘ DataInicio
+
+◘ DataFim
+
+◘ Status
+
+
+## Tabela tarefas
+
+### •	Contém cadastros das tarefas.
+
+◘ Id
+
+◘ TarefaId
+
+◘ Titulo
+
+◘ Descricao
+
+◘ Prioridade
+
+◘ Status
+
+◘ UsuarioAtribuido
+
+◘ DataVencimento
+
+◘ CriadoEm
+
+◘ AtualizadoEm
+
+◘ ProjetoId
+
 
 
 
