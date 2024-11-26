@@ -7,8 +7,11 @@ O Gerenciador de Tarefas Mobile é um aplicativo projetado para oferecer uma exp
 As seguintes tecnologias foram utilizadas no desenvolvimento deste projeto:
 
 ◘ HTML;
+
 ◘ CSS;
+
 ◘ JavaScript;
+
 ◘ React Native;
 
 ## Arquitetura
