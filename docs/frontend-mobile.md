@@ -19,7 +19,14 @@ As seguintes tecnologias foram utilizadas no desenvolvimento deste projeto:
 [Descrição da arquitetura das aplicação móvel, incluindo os componentes e suas interações.]
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
+
+A modelagem da aplicação apresentada no diagrama representa um sistema de gerenciamento de tarefas, conforme os seguintes detalhes:
+
+
+Estrutura de Dados:
+
+![image](https://github.com/user-attachments/assets/773d0312-76fb-49df-915f-3bb9da3a378d)
+
 
 ## Projeto da Interface
 [Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
