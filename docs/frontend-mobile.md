@@ -30,50 +30,75 @@ A modelagem da aplicação apresentada no diagrama representa um sistema de gere
 
 ## Tabela projeto
 
-### •	Contém informações relacionadas ao projeto.
+ ##### •	Contém informações relacionadas ao projeto.
 
-◘ Id
+ ##### •	Campos principais.
 
-◘ Nome
+◘ Id: <kbd>identificador único</kbd>
 
-◘ Descricao
+◘ Nome: <kbd>Nome do Projeto</kbd>
 
-◘ DataInicio
+◘ Descricao: <kbd>Descrição do projeto</kbd>
 
-◘ DataFim
+◘ DataInicio: <kbd>Data de inicio do projeto</kbd>
 
-◘ Status
+◘ DataFim: <kbd>Data final do projeto</kbd>
+
+◘ Status: <kbd>Status do projeto</kbd>
 
 
 ## Tabela tarefas
 
-### •	Contém cadastros das tarefas.
+##### •	Contém cadastros das tarefas.
 
-◘ Id
+##### •	Campos principais.
 
-◘ TarefaId
+◘ TarefaId: <kbd>identificador único</kbd>
 
-◘ Titulo
+◘ Titulo: <kbd>Título da tarefa</kbd>
 
-◘ Descricao
+◘ Descricao: <kbd>Descrição da tarefa</kbd>
 
-◘ Prioridade
+◘ Prioridade: <kbd>Prioridade: 'alta', 'média', 'baixa'</kbd>
 
-◘ Status
+◘ Status: <kbd>Status da tarefa</kbd>
 
-◘ UsuarioAtribuido
+◘ UsuarioAtribuido: <kbd>Id do usuário atribuído à tarefa</kbd>
 
-◘ DataVencimento
+◘ DataVencimento: <kbd>Data de vencimento da tarefa</kbd>
 
-◘ CriadoEm
+◘ CriadoEm: <kbd>Data de criação da tarefa</kbd>
 
-◘ AtualizadoEm
+◘ AtualizadoEm: <kbd>Data de última atualização da tarefa</kbd>
+
+◘ ProjetoId: <kbd>chave estrangeira relacionada à tabela projeto</kbd>
+
+## Tabela usuarios
+
+  ##### •	Contém dados cadastrados dos usários.
+ 
+  ##### •	Campos principais.
+ 
+◘ Id: <kbd>identificador único</kbd>
+
+◘ Nome: <kbd>Nome do usuário</kbd>
+
+◘ Email: <kbd>E-mail do usuário</kbd>
+
+◘ senha: <kbd>Senha do usuário</kbd>
+
+◘ Perfil:<kbd>"Administrador" "Cliente"</kbd>
+
+
+## Tabela usuarioprojeto
+
+##### •	Campos principais.
+
+◘ UsuarioId
 
 ◘ ProjetoId
 
-
-
-
+ 
 ## Projeto da Interface
 [Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
 
