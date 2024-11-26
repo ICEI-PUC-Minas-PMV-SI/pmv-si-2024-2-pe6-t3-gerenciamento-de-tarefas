@@ -42,7 +42,11 @@ As seguintes tecnologias foram utilizadas no desenvolvimento deste projeto:
 
 ## Requisitos Funcionais
 
-[Liste os principais requisitos funcionais da aplicação.]
+| ID     | Descrição do Requisito                                                                                                                                         | Prioridade |
+|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| RF-001 | O app deve permitir que o usuário crie, edite e exclua tarefas, associando cada tarefa a um projeto específico.                                           | Alta       |
+| RF-002 | O app deve possibilitar ao usuário configurar notificações para tarefas e projetos, alertando sobre prazos e atualizações por meio de pop-ups ou uma área de notificações. | Média      |
+| RF-003 | O app deve gerar relatórios personalizados sobre o andamento dos projetos e tarefas, exibindo informações como número de tarefas concluídas, status dos projetos e tempo gasto em cada tarefa. | Média      |
 
 ## Requisitos Não Funcionais
 
