@@ -1,6 +1,6 @@
 # Front-end Móvel
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+O Gerenciador de Tarefas Mobile é um aplicativo projetado para oferecer uma experiência eficiente e organizada no acompanhamento de projetos e tarefas diretamente no celular. Com uma interface intuitiva e responsiva, o app permite que os usuários visualizem seus projetos, adicionem e editem tarefas, configurem notificações personalizadas para lembretes importantes e acessem relatórios detalhados, tudo na palma da mão. Além disso, o aplicativo é focado em promover a produtividade, simplificando o gerenciamento de tarefas em qualquer lugar, a qualquer momento.
 
 ## Tecnologias Utilizadas
 [Lista das tecnologias principais que serão utilizadas no projeto.]
