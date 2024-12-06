@@ -165,7 +165,19 @@ A interface da aplicação de gerenciamento de tarefas será projetada para ofer
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+Para garantir a segurança do Gerenciador de Tarefas Mobile, utilizaremos o JSON Web Token (JWT) para autenticar a sessão dos usuários. O JWT é uma maneira segura de garantir que as informações de autenticação sejam transmitidas de forma confiável entre o cliente e o servidor, sem a necessidade de armazenar dados de sessão no servidor.
+
+### Autenticação com JWT no React Native:
+
+◘ O usuário se autentica utilizando seu e-mail e senha na aplicação.
+
+◘ Após a autenticação, o backend gera um token JWT, que é enviado para o cliente.
+
+◘ O token JWT contém informações relevantes, como o ID do usuário e seu tipo (administrador, usuário), além de uma data de expiração definida para aumentar a segurança.
+
+◘ Em cada requisição subsequente, o token é enviado no header Authorization, permitindo que o backend valide a autenticidade do usuário.
+
+◘ O backend valida o token em cada requisição para garantir que o usuário tenha permissão para acessar o recurso solicitado.
 
 ## Implantação
 
