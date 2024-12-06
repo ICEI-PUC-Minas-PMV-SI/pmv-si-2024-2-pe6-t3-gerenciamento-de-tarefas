@@ -100,19 +100,46 @@ A modelagem da aplicação apresentada no diagrama representa um sistema de gere
 
  
 ## Projeto da Interface
-[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
 
 ### Wireframes
 [Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
 
 ### Design Visual
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+
+O design visual da interface será orientado para a simplicidade e a eficiência, com um estilo moderno e minimalista que prioriza a usabilidade. O objetivo é criar um ambiente visual agradável e intuitivo, que auxilie os usuários a focarem em suas tarefas sem distrações.
+
+#### Estrutura e Paleta de Cores:
+
+A paleta de cores será composta por tons neutros e sutis, com destaques em cores mais vivas para indicar ações importantes ou alertas:
+
+◘ Primária: Tons de azul suave, usados para menus e botões principais, trazendo uma sensação de calma e organização.
+
+◘ Secundária: Tons de cinza para planos de fundo e separadores, criando um contraste harmonioso sem sobrecarregar a interface.
+
+◘ Destaques: Vermelho para erros/alertas, verde para tarefas concluídas.
+
 
 ### Layout Responsivo
-[Discuta como a interface será adaptada para diferentes tamanhos de tela e dispositivos.]
+
+A interface da aplicação de gerenciamento de tarefas será projetada com um layout responsivo para oferecer uma experiência consistente e intuitiva em dispositivos de diferentes tamanhos, como tablets e smartphones.
+
+Smartphones: Navegação simplificada com menus acessíveis. Conteúdo disposto verticalmente, priorizando informações mais relevantes, como tarefas do dia e notificações. Funções de edição e detalhes de projetos/tarefas serão acessadas por modais ou novas páginas.
+
+Tablets: O layout será ajustado para manter menus laterais ou superiores compactados, dependendo da orientação do dispositivo. Painéis serão reorganizados em colunas ou pilhas, para evitar sobreposição de informações.
+
 
 ### Interações do Usuário
-[Descreva as interações do usuário na interface, como animações, transições entre páginas e outras interações.]
+
+A interface da aplicação de gerenciamento de tarefas será projetada para oferecer interações suaves, responsivas e intuitivas, promovendo uma experiência de usuário agradável e eficiente. As interações serão compostas por animações, transições e feedbacks visuais que ajudam os usuários a entenderem suas ações e o estado atual do sistema.
+
+####  Feedback em Ações:
+◘ Adicionar ou Atualizar Tarefas: Exibição de um alerta visual (como um pop-up ou um breve destaque colorido) indicando o sucesso ou falha da operação.
+◘ Alteração de Status: Mudanças de status (ex.: de "Em andamento" para "Concluído") serão acompanhadas por animações sutis, como um ícone de check sendo marcado ou uma mudança de cor.
+
+#### Gestos para Dispositivos Móveis:
+◘ Deslizar para a esquerda ou direita para marcar tarefas como concluídas ou excluí-las.
+◘ Toque longo para abrir opções de edição ou detalhamento.
+
 
 ## Fluxo de Dados
 
