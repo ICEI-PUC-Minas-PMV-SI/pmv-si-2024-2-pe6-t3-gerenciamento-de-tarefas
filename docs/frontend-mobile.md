@@ -169,7 +169,7 @@ A interface da aplicação de gerenciamento de tarefas será projetada para ofer
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t3-gerenciamento-de-tarefas/blob/main/docs/img/fluxo%20de%20dados%20mobile.jpg)
 
 ## Requisitos Funcionais
 
