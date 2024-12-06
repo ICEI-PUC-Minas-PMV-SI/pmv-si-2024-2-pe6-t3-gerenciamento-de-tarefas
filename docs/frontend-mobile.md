@@ -16,7 +16,31 @@ As seguintes tecnologias foram utilizadas no desenvolvimento deste projeto:
 
 ## Arquitetura
 
-[Descrição da arquitetura das aplicação móvel, incluindo os componentes e suas interações.]
+A arquitetura do sistema de Gerenciador de Tarefas Mobile foi projetada para ser modular e escalável, utilizando o framework React Native para criar uma experiência otimizada em dispositivos móveis. Com integração à API REST desenvolvida no back-end, a aplicação segue uma estrutura em camadas e componentes bem definidos, garantindo flexibilidade, eficiência e facilidade de manutenção.
+
+### Descrição da Arquitetura
+
+◘ React Native: A interface do usuário será construída com componentes reutilizáveis e otimizados para dispositivos móveis, oferecendo uma navegação fluida e responsiva.
+
+### Componente de Navegação e Rotas
+
+◘ React Navigation: Responsável por gerenciar a navegação entre telas, com suporte a pilhas, abas e rotas condicionais.
+
+◘ Expo Router: Simplifica a configuração de rotas com uma abordagem baseada em arquivos, inspirada no modelo do Next.js, mas adaptada para React Native.
+
+
+### Componentes da Interface 
+
+◘ Formulários de Cadastro e Login: Componentes que gerenciam autenticação e registro de usuários.
+
+◘ Formulários de Tarefas: Componentes que permitem criar, editar e excluir tarefas.
+
+### Interações Dinâmicas
+
+◘ JavaScript: Gerencia ações dinâmicas, como validação de formulários, navegação condicional e controle de estados (por exemplo, autenticação).
+
+◘ Axios: Para comunicação com a API, enviando e recebendo dados de forma eficiente.
+
 
 ## Modelagem da Aplicação
 
