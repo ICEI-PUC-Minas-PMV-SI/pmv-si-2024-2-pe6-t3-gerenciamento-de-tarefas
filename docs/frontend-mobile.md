@@ -134,10 +134,12 @@ A interface da aplicação de gerenciamento de tarefas será projetada para ofer
 
 ####  Feedback em Ações:
 ◘ Adicionar ou Atualizar Tarefas: Exibição de um alerta visual (como um pop-up ou um breve destaque colorido) indicando o sucesso ou falha da operação.
+
 ◘ Alteração de Status: Mudanças de status (ex.: de "Em andamento" para "Concluído") serão acompanhadas por animações sutis, como um ícone de check sendo marcado ou uma mudança de cor.
 
 #### Gestos para Dispositivos Móveis:
 ◘ Deslizar para a esquerda ou direita para marcar tarefas como concluídas ou excluí-las.
+
 ◘ Toque longo para abrir opções de edição ou detalhamento.
 
 
