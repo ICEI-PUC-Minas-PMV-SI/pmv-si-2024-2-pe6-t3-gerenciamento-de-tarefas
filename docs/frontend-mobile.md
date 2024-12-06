@@ -178,14 +178,37 @@ A interface da aplicação de gerenciamento de tarefas será projetada para ofer
 5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
 
 ## Testes
+### ◘ 1.0 - Caso de Teste: Login e Logout com autenticação utilizando token JWT:
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+| Passo  |  Descrição                                                                                                                |
+|--------|---------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | Acessar a página de login.          |
+| 2 |Inserir as credenciais (e-mail e senha) nos campos exibidos.          |
+| 3 | Clicar no botão "Entrar" para autenticar. O usuário será redirecionado para a página "Home".          |
+| 4 |Clicar no botão "Sair". O usuário será redirecionado novamente para a página de login.          |
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+### ◘ Resultados:
+
+|  Resultado Esperado  |  Resultado Alcançado                                                                                                                |
+|--------|---------------------------------------------------------------------------------------------------------------------------------------|
+| Login bem-sucedido Request: 200 OK | Usuário autenticado com sucesso. O token JWT foi gerado e armazenado no Local Storage.          |
+| Logout bem-sucedido Request: 200 OK | Usuário redirecionado para a página de login. O token JWT foi "removido/resetado" corretamente.          |
+
+### ◘ 1.1 Caso de Teste: Tentativa de Login:
+
+| Passo  |  Descrição                                                                                                                |
+|--------|---------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | Acessar a página de login.          |
+| 2 |Inserir um e-mail válido e uma senha incorreta nos campos exibidos.          |
+| 3 | Clicar no botão "Entrar" para tentar autenticar.          |
+| 4 |Caso a senha esteja incorreta, será exibido um pop-up com a mensagem "Senha incorreta". O usuário deve clicar no botão de fechar para tentar realizar o login novamente          |
+| 5 |	Inserir as credenciais corretas e clicar no botão "Entrar". O usuário será redirecionado para a página "Home".         |
+
+### ◘ Resultados:
+| Cenário  |  Resultado Esperado                                                       |   Resultado Alcançado  |
+|--------|------------------------------------------------------------------|------------------------------------------------------------------|
+| Login com senha correta | Request: 200 OK - Login bem-sucedido.          |  Usuário autenticado com sucesso. O token JWT foi gerado e armazenado no Local Storage. O usuário foi redirecionado para a página "Home".    |
+| Login com senha incorreta | Request: 401 Unauthorized - Login não-sucedido.          |  Um pop-up exibiu a mensagem "Senha incorreta". O usuário não foi autenticado, e o token JWT não foi gerado. O usuário permaneceu na página de login.    |
 
 # Referências
 
