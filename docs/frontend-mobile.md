@@ -126,7 +126,7 @@ A modelagem da aplicação apresentada no diagrama representa um sistema de gere
 ## Projeto da Interface
 
 ### Wireframes
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t3-gerenciamento-de-tarefas/blob/main/docs/img/Wireframe.jpg)
 
 ### Design Visual
 
