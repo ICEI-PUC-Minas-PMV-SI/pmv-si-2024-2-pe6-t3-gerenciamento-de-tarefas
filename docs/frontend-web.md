@@ -87,4 +87,5 @@ A estratégia de teste inclui:
 
 ## Referências
 
-Inclua todas as referências (livros, artigos, sites, etc.) utilizadas no desenvolvimento do trabalho.
+https://developer.mozilla.org/pt-BR/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started
+https://pt-br.legacy.reactjs.org/docs/getting-started.html
