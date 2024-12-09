@@ -252,4 +252,6 @@ Para garantir a segurança do Gerenciador de Tarefas Mobile, utilizaremos o JSON
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+https://callstack.github.io/react-native-paper/
+
+https://www.uninter.com/qualificacao-profissional/a-distancia/desenvolvimento-mobile-e-multiplataforma/?gad_source=1&gclid=Cj0KCQiAx9q6BhCDARIsACwUxu4-0J3M4mGmffC_M_QekadKyWBD7XLB_j2yCtc4kGH3HZUIL2Ohs-UaAphWEALw_wcB&gclsrc=aw.ds
