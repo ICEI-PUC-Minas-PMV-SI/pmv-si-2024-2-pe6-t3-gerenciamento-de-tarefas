@@ -126,7 +126,17 @@ A modelagem da aplicação apresentada no diagrama representa um sistema de gere
 ## Projeto da Interface
 
 ### Wireframes
-![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t3-gerenciamento-de-tarefas/blob/main/docs/img/Wireframe.jpg)
+Tela de Login:
+
+![image](https://github.com/user-attachments/assets/cb661cd3-8496-472b-a9fd-cccb84b03049)
+
+Tela de Projetos:
+
+![image](https://github.com/user-attachments/assets/b5abb509-a451-4868-9992-40d4fe2d875a)
+
+Tela de Tarefas:
+
+![image](https://github.com/user-attachments/assets/b715d4b9-431d-4a78-aa52-a34497753bb3)
 
 ### Design Visual
 
