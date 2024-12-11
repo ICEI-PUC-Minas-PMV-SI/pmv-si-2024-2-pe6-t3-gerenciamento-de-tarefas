@@ -67,13 +67,16 @@ A aplicação incluirá considerações de segurança, como autenticação de us
 
 ## Implantação
 
-Instruções para implantar a aplicação distribuída em um ambiente de produção:
-
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+#### 1.	Pré-requisitos:
+##### ◘ Node.js e dependências instaladas no servidor de produção.
+##### ◘ Banco de dados configurado (PostgreSQL).
+#### 2.	Etapas de Deploy:
+##### ◘ Configurar variáveis de ambiente no servidor (porta, URLs, chaves JWT).
+##### ◘ Realizar build do front-end (ReactJS para web e React Native para mobile).
+##### ◘ Implantar o back-end e banco de dados em um serviço como.
+#### 3.	Teste no Ambiente de Produção:
+##### ◘ Verificar tempos de resposta e funcionalidade geral.
+##### ◘ Garantir que a aplicação esteja acessível em dispositivos variados.
 
 ## Testes
 
