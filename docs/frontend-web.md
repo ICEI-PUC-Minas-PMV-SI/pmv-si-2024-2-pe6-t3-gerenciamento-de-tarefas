@@ -25,10 +25,19 @@ A modelagem é baseada em uma estrutura simples de componentes para garantir a m
 A interface web da aplicação de gerenciamento de tarefas será projetada para oferecer uma experiência de usuário limpa, intuitiva e focada na produtividade. O design visual segue uma abordagem minimalista e funcional, com cores suaves e ícones claros para guiar o usuário e evitar distrações. A interface busca uma organização lógica das funcionalidades para que os usuários possam navegar facilmente entre os projetos, tarefas e relatórios.
 
 ### Wireframes
+Tela de Projetos:
+![image](https://github.com/user-attachments/assets/3330a3d7-7fa1-46df-a9d1-75b1327fd7e5)
 
-O design e os wireframes principais das páginas incluem:
-- **Formulário de criação de projeto** (como visto nas imagens fornecidas), com campos de nome, descrição, data de início e data de fim do projeto, além de um botão para criar o projeto.
-- **Listagem de Projetos**: Exibe todos os projetos criados pelo usuário, permitindo navegação fácil entre eles.
+Tela de Tarefas:
+![image](https://github.com/user-attachments/assets/25d07064-75be-49ff-a7ee-41dc7d0139a0)
+
+![image](https://github.com/user-attachments/assets/ae56a033-fa3b-4247-bb9c-f6c66cb71f1b)
+
+![image](https://github.com/user-attachments/assets/e847804e-a190-40d6-b3b1-5e3c87951acd)
+
+![image](https://github.com/user-attachments/assets/607b9ae8-8d67-4d41-b3e8-ce3755779853)
+
+
 
 ### Design Visual
 
