@@ -70,10 +70,12 @@ A aplicação incluirá considerações de segurança, como autenticação de us
 #### 1.	Pré-requisitos:
 ##### ◘ Node.js e dependências instaladas no servidor de produção.
 ##### ◘ Banco de dados configurado (PostgreSQL).
+
 #### 2.	Etapas de Deploy:
 ##### ◘ Configurar variáveis de ambiente no servidor (porta, URLs, chaves JWT).
 ##### ◘ Realizar build do front-end (ReactJS para web e React Native para mobile).
 ##### ◘ Implantar o back-end e banco de dados em um serviço como.
+
 #### 3.	Teste no Ambiente de Produção:
 ##### ◘ Verificar tempos de resposta e funcionalidade geral.
 ##### ◘ Garantir que a aplicação esteja acessível em dispositivos variados.
