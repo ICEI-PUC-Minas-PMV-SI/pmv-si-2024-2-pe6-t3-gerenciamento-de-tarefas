@@ -126,6 +126,17 @@ A aplicação incluirá considerações de segurança, como autenticação de us
 | Campos preenchidos         | Request: 201 Created - Tarefa criada com sucesso.                         | Tarefa adicionada à lista na seção "Tarefas" do projeto.           |
 | Campos obrigatórios vazios | Request: 400 Bad Request - Informações incompletas.                     | Exibição de mensagem de erro "Preencha todos os campos obrigatórios".|
 
+
+### ◘ Prints de Teste:
+
+#### ◘ Caso de Teste: Criação e Edição de Projetos:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t3-gerenciamento-de-tarefas/blob/main/docs/img/1testeprojetoweb.jpg)
+
+#### ◘ Caso de Teste: Criação e Edição de Tarefas:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t3-gerenciamento-de-tarefas/blob/main/docs/img/1testetarefaweb.jpg)
+
 ### Observações:
 - Verifique se os dados enviados estão sendo armazenados corretamente no banco de dados.
 - Teste casos adicionais, como edição e exclusão de projetos e tarefas, para garantir a consistência das operações CRUD.
