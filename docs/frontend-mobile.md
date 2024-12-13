@@ -262,7 +262,7 @@ Para garantir a segurança do Gerenciador de Tarefas Mobile, utilizaremos o JSON
 
 ## Testes
 
-### ■ 2.0 - Caso de Teste: Criação de Projetos
+### ◘ 2.0 - Caso de Teste: Criação de Projetos
 
 | Passo  | Descrição                                                                                  |
 |--------|--------------------------------------------------------------------------------------------|
@@ -271,7 +271,7 @@ Para garantir a segurança do Gerenciador de Tarefas Mobile, utilizaremos o JSON
 | 3      | Preencher os campos obrigatórios, como nome do projeto, descrição e status inicial.      |
 | 4      | Clicar no botão de confirmação para criar o projeto.                                    |
 
-### ■ Resultados:
+### ◘ Resultados:
 
 | Resultado Esperado                                 | Resultado Alcançado                                                               |
 |---------------------------------------------------|----------------------------------------------------------------------------------|
@@ -286,7 +286,7 @@ Para garantir a segurança do Gerenciador de Tarefas Mobile, utilizaremos o JSON
 | 3      | Modificar as informações desejadas, como nome ou descrição, e clicar no botão de confirmação.  |
 | 4      | Para testar a exclusão, clicar no botão vermelho "Excluir" e confirmar a exclusão.               |
 
-### ■ Resultados:
+### ◘ Resultados:
 
 | Cenário          | Resultado Esperado                                          | Resultado Alcançado                                      |
 |-------------------|------------------------------------------------------------|---------------------------------------------------------|
@@ -295,7 +295,7 @@ Para garantir a segurança do Gerenciador de Tarefas Mobile, utilizaremos o JSON
 
 ---
 
-### ■ 3.0 - Caso de Teste: Criação de Tarefas no Projeto
+### ◘ 3.0 - Caso de Teste: Criação de Tarefas no Projeto
 
 | Passo  | Descrição                                                                                                          |
 |--------|------------------------------------------------------------------------------------------------------------------|
@@ -304,13 +304,13 @@ Para garantir a segurança do Gerenciador de Tarefas Mobile, utilizaremos o JSON
 | 3      | Preencher os campos obrigatórios, como nome da tarefa, descrição, prioridade, status inicial e data de vencimento. |
 | 4      | Clicar no botão de confirmação para criar a tarefa.                                                            |
 
-### ■ Resultados:
+### ◘ Resultados:
 
 | Resultado Esperado                                 | Resultado Alcançado                                                                 |
 |---------------------------------------------------|------------------------------------------------------------------------------------|
 | Request: 201 Created - Tarefa criada com sucesso  | A nova tarefa aparece listada na tela "Tarefas do Projeto". Os dados foram salvos. |
 
-### ■ 3.1 - Caso de Teste: Edição e Exclusão de Tarefas
+### ◘ 3.1 - Caso de Teste: Edição e Exclusão de Tarefas
 
 | Passo  | Descrição                                                                                                     |
 |--------|-------------------------------------------------------------------------------------------------------------|
@@ -319,13 +319,25 @@ Para garantir a segurança do Gerenciador de Tarefas Mobile, utilizaremos o JSON
 | 3      | Modificar as informações desejadas, como nome ou descrição, e clicar no botão de confirmação.            |
 | 4      | Para testar a exclusão, clicar no botão vermelho "Excluir" e confirmar a exclusão.                          |
 
-### ■ Resultados:
+### ◘ Resultados:
 
 | Cenário          | Resultado Esperado                                          | Resultado Alcançado                                      |
 |-------------------|------------------------------------------------------------|---------------------------------------------------------|
 | Edição bem-sucedida | Request: 200 OK - Informações da tarefa atualizadas com sucesso | Os dados foram alterados corretamente e salvos no backend. |
 | Exclusão bem-sucedida | Request: 200 OK - Tarefa removida com sucesso                | A tarefa foi excluída e não aparece mais na lista.         |
 
+### ◘ Prints de Teste:
+
+#### ◘ Caso de Teste: Login:
+![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t3-gerenciamento-de-tarefas/blob/main/docs/img/1testeloginmobile.jpg)
+
+#### ◘ Caso de Teste: Criação e Edição de Projetos:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t3-gerenciamento-de-tarefas/blob/main/docs/img/1testeprojetomobile.jpg)
+
+#### ◘ Caso de Teste: Criação e Edição de Tarefas:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-2-pe6-t3-gerenciamento-de-tarefas/blob/main/docs/img/1testetarefaprojetomobile.jpg)
 
 
 # Referências
