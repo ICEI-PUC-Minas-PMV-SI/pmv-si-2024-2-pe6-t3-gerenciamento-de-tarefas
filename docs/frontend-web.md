@@ -91,13 +91,47 @@ A aplicação incluirá considerações de segurança, como autenticação de us
 
 ## Testes
 
-A estratégia de teste inclui:
+## Testes Front-End: Criação de Projetos e Tarefas
 
-1. Criação de casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implementação de testes unitários para testar unidades individuais de código, como funções e classes.
-3. Testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilização de ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+### 1.0 - Caso de Teste: Criação de Projetos
+
+| Passo  | Descrição                                                                                                                 |
+|-------|-------------------------------------------------------------------------------------------------------------------------|
+| 1     | Acessar a aba "Projetos" na barra de navegação superior.                                                                      |
+| 2     | Clicar no botão "Adicionar Novo Projeto".                                                                                  |
+| 3     | Preencher os campos obrigatórios (título, descrição, data de início, data de término).                                         |
+| 4     | Clicar no botão "Salvar".                                                                                                   |
+
+#### Resultados:
+
+| Cenário                   | Resultado Esperado                                                        | Resultado Alcançado                                              |
+|----------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------|
+| Campos preenchidos         | Request: 201 Created - Projeto criado com sucesso.                       | Projeto adicionado à lista e exibido na página "Todos os Projetos". |
+| Campos obrigatórios vazios | Request: 400 Bad Request - Informações incompletas.                     | Exibição de mensagem de erro "Preencha todos os campos obrigatórios".|
+
+### 2.0 - Caso de Teste: Criação de Tarefas em Projetos
+
+| Passo  | Descrição                                                                                                                 |
+|-------|-------------------------------------------------------------------------------------------------------------------------|
+| 1     | Acessar um projeto existente na página "Todos os Projetos" clicando no botão "Editar".                                          |
+| 2     | Navegar até a seção "Tarefas" do projeto.                                                                                 |
+| 3     | Clicar no botão "Adicionar Nova Tarefa".                                                                                   |
+| 4     | Preencher os campos obrigatórios (título, descrição, prioridade, data de vencimento).                                        |
+| 5     | Clicar no botão "Salvar".                                                                                                   |
+
+#### Resultados:
+
+| Cenário                   | Resultado Esperado                                                        | Resultado Alcançado                                              |
+|----------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------|
+| Campos preenchidos         | Request: 201 Created - Tarefa criada com sucesso.                         | Tarefa adicionada à lista na seção "Tarefas" do projeto.           |
+| Campos obrigatórios vazios | Request: 400 Bad Request - Informações incompletas.                     | Exibição de mensagem de erro "Preencha todos os campos obrigatórios".|
+
+### Observações:
+- Verifique se os dados enviados estão sendo armazenados corretamente no banco de dados.
+- Teste casos adicionais, como edição e exclusão de projetos e tarefas, para garantir a consistência das operações CRUD.
+- Caso encontre bugs ou inconsistências, documente o comportamento observado e o esperado.
+
+
 
 ## Referências
 
