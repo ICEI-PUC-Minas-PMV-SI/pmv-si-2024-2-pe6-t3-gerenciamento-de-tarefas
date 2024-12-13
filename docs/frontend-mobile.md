@@ -260,6 +260,74 @@ Para garantir a segurança do Gerenciador de Tarefas Mobile, utilizaremos o JSON
 | Login com senha correta | Request: 200 OK - Login bem-sucedido.          |  Usuário autenticado com sucesso. O token JWT foi gerado e armazenado no Local Storage. O usuário foi redirecionado para a página "Home".    |
 | Login com senha incorreta | Request: 401 Unauthorized - Login não-sucedido.          |  Um pop-up exibiu a mensagem "Senha incorreta". O usuário não foi autenticado, e o token JWT não foi gerado. O usuário permaneceu na página de login.    |
 
+## Testes
+
+### ■ 2.0 - Caso de Teste: Criação de Projetos
+
+| Passo  | Descrição                                                                                  |
+|--------|--------------------------------------------------------------------------------------------|
+| 1      | Acessar a página "Seus Projetos".                                                         |
+| 2      | Clicar no botão verde "Novo Projeto".                                                    |
+| 3      | Preencher os campos obrigatórios, como nome do projeto, descrição e status inicial.      |
+| 4      | Clicar no botão de confirmação para criar o projeto.                                    |
+
+### ■ Resultados:
+
+| Resultado Esperado                                 | Resultado Alcançado                                                               |
+|---------------------------------------------------|----------------------------------------------------------------------------------|
+| Request: 201 Created - Projeto criado com sucesso | O novo projeto aparece listado na tela "Seus Projetos". Os dados foram salvos.  |
+
+### ■ 2.1 - Caso de Teste: Edição e Exclusão de Projetos
+
+| Passo  | Descrição                                                                                           |
+|--------|---------------------------------------------------------------------------------------------------|
+| 1      | Na página "Seus Projetos", localizar um projeto existente.                                       |
+| 2      | Clicar no botão azul "Editar" para abrir os detalhes do projeto.                                 |
+| 3      | Modificar as informações desejadas, como nome ou descrição, e clicar no botão de confirmação.  |
+| 4      | Para testar a exclusão, clicar no botão vermelho "Excluir" e confirmar a exclusão.               |
+
+### ■ Resultados:
+
+| Cenário          | Resultado Esperado                                          | Resultado Alcançado                                      |
+|-------------------|------------------------------------------------------------|---------------------------------------------------------|
+| Edição bem-sucedida | Request: 200 OK - Informações do projeto atualizadas com sucesso | Os dados foram alterados corretamente e salvos no backend. |
+| Exclusão bem-sucedida | Request: 200 OK - Projeto removido com sucesso               | O projeto foi excluído e não aparece mais na lista.         |
+
+---
+
+### ■ 3.0 - Caso de Teste: Criação de Tarefas no Projeto
+
+| Passo  | Descrição                                                                                                          |
+|--------|------------------------------------------------------------------------------------------------------------------|
+| 1      | Na página "Seus Projetos", clicar no botão azul "Entrar" em um projeto.                                        |
+| 2      | Na página "Tarefas do Projeto", clicar no botão azul "Nova Tarefa".                                            |
+| 3      | Preencher os campos obrigatórios, como nome da tarefa, descrição, prioridade, status inicial e data de vencimento. |
+| 4      | Clicar no botão de confirmação para criar a tarefa.                                                            |
+
+### ■ Resultados:
+
+| Resultado Esperado                                 | Resultado Alcançado                                                                 |
+|---------------------------------------------------|------------------------------------------------------------------------------------|
+| Request: 201 Created - Tarefa criada com sucesso  | A nova tarefa aparece listada na tela "Tarefas do Projeto". Os dados foram salvos. |
+
+### ■ 3.1 - Caso de Teste: Edição e Exclusão de Tarefas
+
+| Passo  | Descrição                                                                                                     |
+|--------|-------------------------------------------------------------------------------------------------------------|
+| 1      | Na página "Tarefas do Projeto", localizar uma tarefa existente.                                           |
+| 2      | Clicar no botão azul "Editar" para abrir os detalhes da tarefa.                                           |
+| 3      | Modificar as informações desejadas, como nome ou descrição, e clicar no botão de confirmação.            |
+| 4      | Para testar a exclusão, clicar no botão vermelho "Excluir" e confirmar a exclusão.                          |
+
+### ■ Resultados:
+
+| Cenário          | Resultado Esperado                                          | Resultado Alcançado                                      |
+|-------------------|------------------------------------------------------------|---------------------------------------------------------|
+| Edição bem-sucedida | Request: 200 OK - Informações da tarefa atualizadas com sucesso | Os dados foram alterados corretamente e salvos no backend. |
+| Exclusão bem-sucedida | Request: 200 OK - Tarefa removida com sucesso                | A tarefa foi excluída e não aparece mais na lista.         |
+
+
+
 # Referências
 
 https://callstack.github.io/react-native-paper/
