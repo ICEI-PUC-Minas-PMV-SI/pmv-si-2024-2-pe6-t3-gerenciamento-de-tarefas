@@ -29,7 +29,78 @@ O projeto em desenvolvimento tem como objetivo criar um sistema web de gerenciam
 | ETAPA 5         | [Apresentação](presentation/README.md) |
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+### Pré-requisitos  
+Certifique-se de que os seguintes itens estão instalados em sua máquina:  
+- **Node.js** (v16 ou superior) e npm (ou yarn)
+- **.NET SDK** (versão 6 ou superior)
+- **SQL Server** (ou outro banco de dados configurado no backend)
+- **Expo CLI** (para executar o aplicativo mobile)
+- **Git** (para clonar os repositórios do projeto)
+
+---
+
+### Configuração do Backend  
+1. Clone o repositório do backend:  
+   ```bash  
+   git clone https://github.com/lucasviniciusom/GerenciamentoApiRest.git 
+   cd GerenciamentoApiRest
+   ```  
+
+2. Instale as dependências do projeto:
+   ```bash  
+    dotnet restore
+   ```   
+
+4. Aplique as migrações para configurar o banco de dados: 
+   ```bash  
+   dotnet ef database update 
+   ```
+
+ 5. Execute a aplicação:
+   ```bash  
+   dotnet run
+   ```  
+
+A API estará disponível em https://localhost:44374
+
+---
+
+### Configuração do Frontend Web  
+1. Clone o repositório do frontend web:  
+   ```bash  
+   git clone https://github.com/lucasviniciusom/gerenciamento-front-api.git  
+   cd gerenciamento-front-api
+   ```  
+
+2. Instale as dependências:  
+   ```bash  
+   npm install  
+   ```  
+
+3. Execute a aplicação em modo de desenvolvimento:  
+   ```bash  
+   npm start  
+   ```  
+A aplicação estará disponível em http://localhost:3000
+
+---
+
+### Configuração do Frontend Mobile  
+1. Clone o repositório do frontend mobile:  
+   ```bash  
+   git clone https://github.com/lucasviniciusom/gerenciamento-mobile.git 
+   cd gerenciamento-mobile
+   ```  
+
+2. Instale as dependências:  
+   ```bash  
+   npm install  
+   ```  
+
+3. Inicie o Expo Go:  
+   ```bash  
+   expo start  
+   ```  
 
 # Código
 
